@@ -25,16 +25,13 @@ public class App {
 		// redefinindo o primeiro termo da PA.
 		System.out.print("Qual o primeiro termo da PA? ");
 		int primeiroTermo = sc.nextInt();
-		pa1.setPrimeiroTermo(primeiroTermo);
-		
-		// chamando novamente o loop com o metodo do proximo termo.
-		for(int i = 0; i<n; i++) {
-			System.out.println(pa1.proximoTermo());
-		}
+		pa1.setTermoAtual(primeiroTermo);
 		
 		// redefinindo a razão da PA. 
 		System.out.print("Qual a razao termo da PA? ");
 		int razao = sc.nextInt();
+		pa1.setRazao(razao);
+		
 		// chamando novamente o loop com o metodo do proximo termo.
 		for(int i = 0; i<n; i++) {
 			System.out.println(pa1.proximoTermo());
