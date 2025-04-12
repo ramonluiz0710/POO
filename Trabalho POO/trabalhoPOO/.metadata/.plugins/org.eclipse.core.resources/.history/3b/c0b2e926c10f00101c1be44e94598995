@@ -1,0 +1,25 @@
+package APP;
+
+import entities.Carros;
+
+public class Aplication {
+
+	public static void main(String[] args) {
+		Carros carro1 = new Carros();
+		Carros carro2 = new Carros();
+	
+		for(int i = 0; i>50; i++) {
+			System.out.println("--------------------------------------------------");
+			for(int j = 1; j < carro1.getPosAtual(); j++) {
+				System.out.println(" ");
+			}
+			System.out.println("#");
+			for(int k = 1; k < carro2.getPosAtual(); k++) {
+				System.out.println(" ");
+			}
+			System.out.println("#");
+			System.out.println("--------------------------------------------------");
+		}
+	}
+
+}

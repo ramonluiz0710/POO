@@ -1,0 +1,28 @@
+package app;
+
+import banco.Conta;
+import banco.ContaEspecial;
+
+public class AppConta {
+
+	public static void main(String[] args) {
+		
+		Conta[] contas = new Conta[3];
+		
+		contas[0] = new ContaEspecial("65438", "Asdrubal", 155.0, 2000.0);
+		contas[1] = new Conta("5892", "Paulo", 2155.0);
+		contas[2] = new Conta("43", "Mano Brown", 2000.0);
+		
+		for(int i = 0; i<contas.length; i++) {
+			System.out.println(contas[i]);
+		}
+		
+		for(int i = 0; i<contas.length; i++) {
+			contas[i].saque(2001);
+			System.out.println(contas[i]);
+		}
+		
+
+	}
+
+}

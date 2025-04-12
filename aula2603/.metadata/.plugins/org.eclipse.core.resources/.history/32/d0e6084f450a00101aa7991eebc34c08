@@ -1,0 +1,15 @@
+package application;
+
+import services.Fibonacci;
+
+public class App {
+
+	public static void main(String[] args) {
+		Fibonacci fib = new Fibonacci();
+		
+		int termos = 5;
+		
+		
+	}
+
+}

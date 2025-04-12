@@ -1,0 +1,9 @@
+
+public class app {
+	public static void main(String[] args) {
+		Elevador elevador = new Elevador(4, 15);
+		
+		elevador.entra();
+		
+	}
+}

@@ -1,0 +1,24 @@
+package figuras;
+
+public class Retangulo {
+	private int x;
+	private int y;
+	private int altura;
+	private int largura;
+	
+	Retangulo(int x, int y, int altura, int largura){
+		this.x = x;
+		this.y = y;
+		this.altura = altura;
+		this.largura = largura;
+	}
+	
+	public int perimetro() {
+		return (2*this.altura) + (2*this.largura);
+	}
+	
+	public int area() {
+		return this.altura * this.largura;
+	}
+	
+}

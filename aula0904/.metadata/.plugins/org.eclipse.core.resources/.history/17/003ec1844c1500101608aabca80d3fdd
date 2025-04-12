@@ -1,0 +1,32 @@
+package banco;
+
+public class Conta {
+	protected String numeroConta;
+	protected String nome;
+	protected double saldo;
+	
+	public void deposito(double valor) {
+		this.saldo += valor;
+	}
+	
+	public void saque(double valor) {
+		boolean aprovado = false;
+		do {
+			if(valor <= saldo) {
+				this.saldo -= valor;
+				aprovado = true;
+			}
+		}while(aprovado == false);
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	public String toString() {
+		return this.numeroConta + " - " 
+				+ this.nome + " - "
+				+ this.saldo;
+	}
+	
+}

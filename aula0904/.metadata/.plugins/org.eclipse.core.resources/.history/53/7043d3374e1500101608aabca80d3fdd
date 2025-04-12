@@ -1,0 +1,31 @@
+package banco;
+
+public class ContaEspecial extends Conta{
+	protected double limite;
+	
+	public ContaEspecial(String conta, String nome, double saldo, double limite) {
+		super(conta, nome, saldo);
+		this.limite = limite;
+	}
+	
+	public void saque(double valor) {
+		boolean aprovado = false;
+		
+		double total = this.saldo + this.limite;
+		do {
+			if(valor <= total) {
+				 total -= valor;
+				aprovado = true;
+			}else {
+				System.out.println("valor Insuficiente!");
+			}
+		}while(aprovado == false);
+	}
+	
+	public String toString() {
+		return this.numeroConta + " - " 
+				+ this.nome + " - "
+				+ this.saldo + " - "
+				+ this.limite;
+	}
+}

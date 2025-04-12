@@ -1,0 +1,15 @@
+package services;
+
+public class Fibonacci {
+	private int a = 1;
+	private int b = 1;
+	private int c;
+
+	public void calcula() {
+		System.out.println(c = a + b);
+		int d = this.b;
+		this.b = this.a + this.b;
+		this.a = d;
+	}
+
+}

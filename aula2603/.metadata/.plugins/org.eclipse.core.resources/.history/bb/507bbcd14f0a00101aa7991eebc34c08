@@ -1,0 +1,11 @@
+package app;
+
+import figuras.Circulo;
+import figuras.Retangulo;
+
+public class App {
+	public static void main(String[] args) {
+		Circulo circ = new Circulo(2, 3, 5);
+		Retangulo ret = new Retangulo(3, 2, 5, 5);
+	}
+}
